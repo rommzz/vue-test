@@ -9,16 +9,6 @@ class Http {
     });
   }
 
-  private requestInterceptor(config: AxiosRequestConfig) {
-    const token = localStorage.getItem('token');
-    if (token) {
-      config.headers = {
-        "Authorization": `Bearer ${token}`,
-      }
-    }
-    return config;
-  }
-
   private requestErrorInterceptor(error: any) {
     return Promise.reject(error);
   }
