@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import CButton from '@/components/CButton.vue';
+import CInput from '@/components/CInput.vue';
+import { ref } from 'vue';
+const title = ref<string>()
 
 
 </script>
@@ -16,7 +19,7 @@ import CButton from '@/components/CButton.vue';
 		</div>
 		<div class="px-1 grid grid-cols-3 gap-5">
 			<div class="card p-5 col-span-2">
-				anjas
+				<CInput label="Title" placeholer="Short sleeve t-shirt" v-model="title"/>
 			</div>
 			<div class="card p-5 col-span-1">
 				anjas
