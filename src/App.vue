@@ -1,6 +1,22 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { onMounted } from 'vue';
+import CategoryServices from '@/utils/api/service/service_category';
+
+const getData = async ()  => {
+  console.log('get data');
+  
+  await CategoryServices.getCategories().then((res) => {
+    console.log(res);
+  }).catch((err) => {
+    console.log(err);
+  });
+}
+
+onMounted(() => {
+  getData();
+})
 </script>
 
 <template>
