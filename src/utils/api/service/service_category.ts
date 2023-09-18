@@ -1,8 +1,7 @@
-import { Category } from '@/utils/models/category';
+import { type Category } from '@/utils/models/category';
 import api from '../index';
+import { type ResponseV1 } from '../response';
 import url from '../urls';
-import { log } from 'console';
-import { ResponseV1 } from '../response';
 
 class CategoryServices {
     public async getCategories(): Promise<Category[]> {

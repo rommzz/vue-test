@@ -4,7 +4,7 @@ import CInput from '@/components/CInput.vue';
 import CInputMedia from '@/components/CInputMedia.vue';
 import CInputCheckbox from '@/components/CInputCheckbox.vue';
 import CTextEditor from '@/components/CTextEditor.vue';
-import { Category } from '@/utils/models/category';
+import { type Category } from '@/utils/models/category';
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions, Dialog, DialogDescription, DialogTitle, DialogPanel } from "@headlessui/vue";
 import { onMounted, reactive, ref } from 'vue';
 import { toast } from 'vue3-toastify';
