@@ -10,3 +10,19 @@ body, h1, h2, h3, h4, h5, h6  {
 	@apply rounded-lg shadow-md bg-white;
 	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15), 0px 0px 5px 0px rgba(23, 24, 24, 0.05);
 }
+
+.divider {
+	@apply border-l border-stone-300;
+}
+.editor .mdi{
+	@apply text-zinc-600 text-2xl;
+}
+.btn-primary {
+	@apply px-4 py-3 bg-emerald-700 rounded text-white text-sm;
+}
+.btn-primary:hover {
+	@apply bg-emerald-600;
+}
+.btn-secondary {
+	@apply px-4 py-3 bg-neutral-800 border-neutral-300 border-2 rounded text-white text-sm;
+}
